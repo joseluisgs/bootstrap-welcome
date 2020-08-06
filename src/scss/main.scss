@@ -34,21 +34,26 @@ body {
 
 // Mis fondos
 .bg-image-1 {
-    background-image: url('/images/bg-dark-1.svg');
+    background-image: url('../images/bg-dark-1.svg');
     background-size: cover;
     min-height: 1000px;
 }
 
 .bg-image-2 {
-    background-image: url('/images/bg-dark-2.svg');
+    background-image: url('../images/bg-dark-2.svg');
     background-size: cover;
     min-height: 1000px;
+}
+
+.bg-image-3 {
+    background-image: url('../images/bg-dark-3.svg');
+    background-size: cover;
+    min-height: 500px;
 }
 
 .card-caracteristicas {
     height: 93%;
 }
-
 
 /* BOOTSTRAP TEMA */
 
@@ -67,6 +72,8 @@ body {
 .text-muted {
   color: $gris !important;
 }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
 
 small { 
   font-weight: 300; 
@@ -118,6 +125,18 @@ a {
   }
 }
 
+// Formularios
+.form-control {
+    background-color: $negro-3;
+    height: unset;
+    padding: .8rem 1rem;
+    border: 0;
+}
+
+.form-control:focus {
+    background-color: $negro-3;
+}
+
 // Card
 .card {
   border-radius: 1rem;
@@ -135,5 +154,55 @@ a {
   box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.5) !important;
 }
 
+// Border y redondeo
+.border-top {
+    border-top: 1px solid rgba(256, 256, 256, .1) !important;
+}
 
+.rounded-top {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
 
+.rounded-bottom {
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+}
+
+/* RESOLUCIONES */
+@media (max-width: 575.98px) {
+    // Lo que es 75% ahora ocupa el 100%
+    .w-75 {
+        width: 100% !important;
+    }
+    // Sobrescribimos el padding
+    .py-5 {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+    // Los botones ocupan todo
+    .btn {
+        width: 100%;
+    }
+    // Las listas son un bloque centrado
+    .list-inline-item {
+        display: block;
+        text-align: center;
+    }
+    // El footer se centra
+    footer {
+        text-align: center;
+    }
+    // Las listas en bloque
+    footer .list-inline-item {
+        display: inline-block;
+    }
+    // alineado a la derecha
+    footer .text-right {
+        text-align: center !important;
+    }
+    // Pasa a ser bloque
+    footer small {
+        display: block;
+    }
+}
