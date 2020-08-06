@@ -1,0 +1,42 @@
+// MIS VARIABLES
+// Fuentes
+$fuentes: 'Montserrat', sans-serif;
+// Colores
+$negro: #0a0a0a;
+$negro-2: #111111;
+$negro-3: #222222;
+$blanco: #ffffff;
+$primario: #ff6079;
+$primario-2: #fe3051;
+$gris: #a1b0bf;
+
+
+
+// Genericos
+body {
+  font-family: $fuentes;
+  font-size: 1rem;
+  font-weight: 300;
+  color: $blanco;
+  background-color: $negro;
+}
+
+// Navbar
+// Navbar
+.navbar {
+    box-shadow: 1px 1px 5px $negro-3;
+    opacity: 99%; //90%
+    min-height: 5rem;
+    // Marca
+    .navbar-brand {
+        font-size: 25px;
+        color: $primario-2;
+        font-weight: bold;
+    }
+}
+
+
+// BOOTSTRAPT TEMA
+.bg-dark {
+  background-color: $negro !important;
+}

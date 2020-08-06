@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Welcome</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <!-- MIS FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <!-- ICONOS ALTERNATIVOS -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVEGACION -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <!-- Meto un contenedor para que no esté pegado -->
+        <div class="container">
+            <!-- Marca e icono -->
+            <a class="navbar-brand" href="#">
+                Bootstrap Welcome</a>
+            <!-- Botón de minimizar -->
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <!-- alineamos a la izquierda -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active font-weight-bold" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SCRIPTS -->
+    <!-- BOOTSTRAP -->
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/popper.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+
+    <!-- TRANSICIONES -->
+    <script>
+        // codigo de jQuery
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+    </script>
+</body>
+
+</html>
