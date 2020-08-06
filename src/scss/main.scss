@@ -35,7 +35,48 @@ body {
 }
 
 
-// BOOTSTRAPT TEMA
+// BOOTSTRAP TEMA
+// Fondos
 .bg-dark {
   background-color: $negro !important;
+}
+
+// Textos
+.text-primary {
+  // Le hacemos un degradado...
+  background: -webkit-linear-gradient($primario, $primario-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-muted {
+  color: $gris !important;
+}
+
+// Botones
+.btn {
+  font-weight: 700;
+  padding: .8rem 1rem;
+  border: 0;
+  border-radius: .4rem;
+}
+
+.btn-primary {
+  background: -webkit-linear-gradient($primario, $primario-2);
+  color: $blanco;
+}
+
+.btn-secondary {
+  background: $negro-3;
+  color: $blanco;
+  // Selector del padre
+  &:hover {
+     background: $negro-3;
+     opacity: .8;
+  }
+}
+
+// Sombras
+.shadow {
+  box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.5) !important;
 }
