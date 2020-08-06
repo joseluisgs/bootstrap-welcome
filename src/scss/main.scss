@@ -45,12 +45,9 @@ body {
     min-height: 1000px;
 }
 
-// Mis efectos
-// Sombras
-.shadow {
-  box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.5) !important;
+.card-caracteristicas {
+    height: 93%;
 }
-
 
 
 /* BOOTSTRAP TEMA */
@@ -132,5 +129,11 @@ a {
     height: 50px;
     background-color: $primario;
 }
+
+// Sombras
+.shadow {
+  box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.5) !important;
+}
+
 
 
