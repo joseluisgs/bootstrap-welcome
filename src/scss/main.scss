@@ -1,4 +1,4 @@
-// MIS VARIABLES
+/* MIS VARIABLES */
 // Fuentes
 $fuentes: 'Montserrat', sans-serif;
 // Colores
@@ -9,8 +9,6 @@ $blanco: #ffffff;
 $primario: #ff6079;
 $primario-2: #fe3051;
 $gris: #a1b0bf;
-
-
 
 // Genericos
 body {
@@ -34,14 +32,28 @@ body {
     }
 }
 
-
-// BOOTSTRAP TEMA
-// Fondos
-.bg-dark {
-  background-color: $negro !important;
+// Mis fondos
+.bg-image-2 {
+    background-image: url('/images/bg-dark-2.svg');
+    background-size: cover;
+    min-height: 1000px;
 }
 
-// Textos
+// Mis efectos
+// Sombras
+.shadow {
+  box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.5) !important;
+}
+
+
+
+/* BOOTSTRAP TEMA */
+
+// Fuentes y texto
+.font-weight-bold { 
+  font-weight: 600 !important; 
+}
+
 .text-primary {
   // Le hacemos un degradado...
   background: -webkit-linear-gradient($primario, $primario-2);
@@ -51,6 +63,15 @@ body {
 
 .text-muted {
   color: $gris !important;
+}
+
+small { 
+  font-weight: 300; 
+}
+
+// Fondos
+.bg-dark {
+  background-color: $negro !important;
 }
 
 // Botones
@@ -76,7 +97,9 @@ body {
   }
 }
 
-// Sombras
-.shadow {
-  box-shadow:  0 .5rem .5rem 0 rgba(0,0,0,.5) !important;
+// Card
+.card {
+  border-radius: 1rem;
 }
+
+
