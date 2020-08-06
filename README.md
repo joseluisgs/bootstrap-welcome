@@ -41,3 +41,6 @@ npm run clean
 
 ## Licencia
 Este proyecto esta licenciado bajo licencia __MIT__, si desea saber más, visite el fichero [LICENSE](https://github.com/joseluisgs/notas-back-nem/blob/master/LICENSE) para su uso docente y educativo.
+
+#### Agradecimientos
+Ejemplo sacado del siguiente [Tutorial](https://www.youtube.com/playlist?list=PLLoRV6QeDz4BFTNm6lZtNCGds9d0GVdGz). Muchas gracias :)
